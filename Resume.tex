@@ -72,7 +72,7 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -114,7 +114,8 @@
     \textbf{\Huge \scshape Janne Wald} \\ \vspace{1pt}
     \small +1 801-556-6690 $|$ \href{mailto:janne.wald@utah.edu}{\underline{janne.wald@utah.edu}} $|$ 
     \href{https://linkedin.com/in/jannewald}{\underline{linkedin.com/in/jannewald}} $|$
-    \href{https://github.com/JanneWald}{\underline{github.com/JanneWald}}
+    \href{https://github.com/JanneWald}{\underline{github.com/JanneWald}} $|$
+    \small Salt Lake City, Utah
 \end{center}
 
 
@@ -140,9 +141,9 @@
       {High Performance Computing Assistant}{October 2024 -- Present}
       {University of Utah's Center for High Performance Computing (CHPC)}{Salt Lake City, UT}
       \resumeItemListStart
-        \resumeItem{Developed a daily log retrieval/parsing/email service using Python, Bash, and containers}
-        \resumeItem{Used DMTF's RESTful Redfish API to get/edit server data}
-        \resumeItem{Continued previous position's responsibilities}
+        \resumeItem{Developed automated daily health reporting system (Python/Bash), saving engineers \textbf{~5+ hours per week each}}        \resumeItem{Interfaced with DMTF's Redfish REST API to access higher quality server data }
+        \resumeItem{\textbf{Doubled usable monitoring data} by implementing fault-tolerant logging by detecting Redfish network failures and falling back to IPMI}
+        \resumeItem{Continued responsibilities from previous role}
 
       \resumeItemListEnd
 
@@ -150,12 +151,9 @@
       {Student Node Wrangler}{June 2024 -- October 2024}
       {University of Utah's CHPC}{Salt Lake City, UT}
       \resumeItemListStart
-          \resumeItem{Operated in a Linux-dominant environment}
-          \resumeItem{Ensured data security in shared filespace and Git}
-        \resumeItem{Monitored CHPC clusters, logging service tickets into internal database}
-        \resumeItem{Collaborated within a Systems Team to maintain the university's supercomputing clusters}
-        \resumeItem{Physically repaired and modified hundreds of Dell and Lenovo servers}
-      \resumeItemListEnd
+        \resumeItem{Repaired and upgraded \textbf{200+ Dell and Lenovo servers}, restoring compute resources for researchers}          \resumeItem{Insured security compliance with secure access controls in shared Linux filespace and Git}
+        \resumeItem{Monitored super computing clusters, logging service tickets into internal database}
+        \resumeItem{Collaborated in a Systems Team on daily ops to keep \textbf{4+ research clusters} operational}      \resumeItemListEnd
       
   \resumeSubHeadingListEnd
 
@@ -164,46 +162,40 @@
 \section{Projects}
     \resumeSubHeadingListStart
 
-
-      \resumeProjectHeading
-          {\textbf{Chess Tutor} $|$ \emph{C++, QT Creator, Lichess API}}{}
-                    \resumeItemListStart
-
-          \resumeItem{Used QT Creator to make a dynamic Chess puzzle app}
-          \resumeItem{Used Lichess's public API to generate random puzzles}
-          \resumeItem{Constructed a parser to adapt API's .pgn data for my project}
+    \resumeProjectHeading
+              {\textbf{Whisper-Pi (Voice-Controlled IoT)} $|$ \emph{Python, React, Whisper, Raspberry Pi}}{}
+            \resumeItemListStart
+                \resumeItem{Implemented \textbf{real-time speech transcription} using OpenAI's Whisper module and a microphone}
+                \resumeItem{Built a Raspberry Pi \textbf{Express server} to receive speech events and host a dashboard}
+                \resumeItem{Constructed a dashboard using a \textbf{Full-stack React} design to display words in real time}
+                \resumeItem{Prototyped voice-activated circuit switch by controlling GPIO circuits with the server}
           \resumeItemListEnd
 
     \resumeProjectHeading
-              {\textbf{Speech-To-Tazer (In Progress)} $|$ \emph{Python, OpenAI's Whisper, Raspberry Pi}}{}
-          \resumeItemListStart
-            \resumeItem{Used OpenAI's Whisper module to live translate microphone input into text}
-            \resumeItem{Create an Express server on Raspberry Pi to receive program transmission}
-            \resumeItem{Show spoken words, including banned ones, using HTML \& CSS in React}
-            \resumeItem{Program Raspberry Pi to close circuit on taser, given a signal from server}
-          \resumeItemListEnd
+        {\textbf{Chess Tutor} $|$ \emph{C++, QT Creator, Lichess Database}}{}
+            \resumeItemListStart
+                \resumeItem{Developed a responsive QT-based Chess puzzle trainer with a dynamic GUI}
+                \resumeItem{Utilized Lichess's large database to generate authentic and unique puzzles }
+                \resumeItem{Implemented board state \& move sequences using Hashmaps and Stacks for efficient logic }
+                \resumeItem{Built a custom PGN parser to adapt Lichess API game data into move sequences}
+
+            \resumeItemListEnd
+          
       \resumeProjectHeading
           {\textbf{Multiplayer Snake Game} $|$ \emph{C\#, Blazor, MySQL, HTTP}}{}
           \resumeItemListStart
-            \resumeItem{Recreated the classic Snake Game but with multiplayer over LAN}
-            \resumeItem{Separated concerns of program by Model-View-Controller architecture}
-            \resumeItem{Stored server/game information via SQL database }
-            \resumeItem{Created alternate simple HTTP 1.0 website to view live games information}
+            \resumeItem{Engineered classic Snake Game but with \textbf{seamlessly synchronized multiplayer} }
+            \resumeItem{Applied MVC architecture to modularize game, UI, and server components }
+            \resumeItem{Added \textbf{SQL-backed persistence} and a simple HTTP website to track past and active games}
           \resumeItemListEnd
-          \resumeProjectHeading
-          {\textbf{Spreadsheet Application} $|$ \emph{C\#, Blazor, JSON, Git}}{}
-          \resumeItemListStart
-            \resumeItem{Developed a basic Spreadsheet Application capable of storing ints, doubles, strings, and functions}
-            \resumeItem{Used several Data Structures like Dependency Graphs and Stacks for real-time performance}
-            \resumeItem{Added JSON serial/deserialization for loading and saving a spreadsheet instance}
-            \resumeItem{Learned good Git practices by co-developing this project within the same repository}
-          \resumeItemListEnd
+
         \resumeProjectHeading
           {\textbf{Multi Threaded Web Proxy} $|$ \emph{Python, TCP, HTTP}}{}
           \resumeItemListStart
-            \resumeItem{Used Networking Principles to develop an efficient Proxy, capable of managing many users' HTTP traffic}
+            \resumeItem{Designed an efficient network Proxy, capable of managing many users' HTTP traffic}
             \resumeItem{Followed RFC documentation to return proper codes and headings on network events}
-            \resumeItem{Used data structures like Hash Maps for efficient querying of block lists and cached responses }
+            \resumeItem{Applied \textbf{Hash Maps} for efficient querying of "block list" and cached responses }
+            \resumeItem{Integrated \textbf{multi-threading} to exponentially increase multi-connection efficiency}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
     
@@ -217,9 +209,10 @@
     \small{\item{
      \textbf{Spoken Languages}{: German, English, Spanish } \\
      \textbf{Programming Languages}{: Python, C\#, JS/TS, C++, Java, Bash, MySQL } \\
-     \textbf{Frameworks}{: Node.JS, Express, Redfish, IPMI} \\
-     \textbf{Tools}{: Git, Docker, Apptainer, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse, Qt, Linux, Windows, WSL, NPM} \\
-     \textbf{Libraries}{: React, NumPy, PyTorch}
+     \textbf{Frameworks}{: Node.JS, Express} \\
+      \textbf{Protocols}{: IPMI, Redfish} \\
+     \textbf{Tools}{: Git, Docker, Apptainer, NPM, Qt Creator, Linux, Windows, WSL} \\
+     \textbf{Libraries}{: React, python-redfish-library, NumPy, PyTorch}
     }}
  \end{itemize}
 
