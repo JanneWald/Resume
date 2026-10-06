@@ -19,21 +19,8 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -56,7 +43,7 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
+% Ensure that generated pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
@@ -101,21 +88,15 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     \textbf{\Huge \scshape Janne Wald} \\ \vspace{1pt}
-    \small +1 801-556-6690 $|$ \href{mailto:janne.wald@utah.edu}{\underline{janne.wald@utah.edu}} $|$ 
+    \small +1 801-556-6690 $|$ \href{mailto:janne.wald@utah.edu}{\underline{janne.wald@utah.edu}} $|$
     \href{https://linkedin.com/in/jannewald}{\underline{linkedin.com/in/jannewald}} $|$
     \href{https://github.com/JanneWald}{\underline{github.com/JanneWald}} $|$
-    \small Salt Lake City, Utah
+    \small Salt Lake City, UT
 \end{center}
 
 
@@ -124,16 +105,14 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Utah}{Salt Lake City, UT}
-      {Bachelor of Science in Computer Science, Minor in Mathematics}{Aug. 2021 -- May 2027(Anticipated)}
+      {B.S. in Computer Science, Minor in Mathematics}{Aug. 2021 -- Dec. 2027 (Expected)}
         \resumeItemListStart
-            \resumeItem{Dean's List, 3.6 GPA}
-            \resumeItem{Cybersecurity, Data Science Club Member/Officer}
-            \resumeItem{Coursework: Mobile \& Software Development I/II, Machine Learning, Data Science, Robotics, Networking}
-
+            \resumeItem{GPA: 3.6 $|$ Dean's List $|$ Capstone Award Winner $|$ Member/Officer, Cybersecurity \& Data Science Clubs}
+            \resumeItem{Coursework: Software Dev. I/II, Mobile Dev., Machine Learning, Data Science, Robotics, Networking}
         \resumeItemListEnd
     \resumeSubheading
-      {University of Helsinki}{Salt Lake City, UT}
-      { Full Stack Open Certificate }{Oct. 2025}
+      {University of Helsinki}{Online}
+      {Full Stack Open Certificate (React, Node.js, TypeScript, GraphQL)}{Oct. 2025}
   \resumeSubHeadingListEnd
 
 
@@ -142,36 +121,43 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
+      {Software Engineer Intern}{Sep. 2026 -- Present}
+      {University of Utah, Center for High Performance Computing (CHPC)}{Salt Lake City, UT}
+      \resumeItemListStart
+        \resumeItem{Building a \textbf{retrieval-augmented generation (RAG)} AI assistant for the Utah Education \& Telehealth Network}
+        \resumeItem{Built scrapers to ingest Confluence wiki and Cisco documentation into a searchable \textbf{vector knowledge base}}
+        \resumeItem{Benchmarked open-source \textbf{LLM}, embedding, reranking, and vision models to select the production stack}
+        \resumeItem{Improved answer quality with \textbf{hybrid search} (keyword + semantic), \textbf{reranking}, and agentic multi-step retrieval}
+        \resumeItem{Containerized the agent server, knowledge base, dashboard, and Microsoft Teams bot with \textbf{Docker Compose}}
+      \resumeItemListEnd
+
+    \resumeSubheading
       {Data Science Intern}{May 2026 -- July 2026}
       {Chartway Credit Union}{Virginia Beach, VA}
       \resumeItemListStart
-        \resumeItem{Maintained and retrieved critical data from Azure Lakehouse Infrastructure}
-        \resumeItem{Used \textbf{Machine Learning} to cluster \textbf{146k} members across \textbf{120} engineered features }
-        \resumeItem{Utilized \textbf{Databricks} workflow to automate new-member-classification, deployment, and retraining of AI models}
-        \resumeItem{Presented findings to Board of Directors, planning a new advertisement campaign for over \textbf{\$40M} in deposits}
-
+        \resumeItem{Clustered \textbf{146K} members across \textbf{120} engineered features with \textbf{machine learning} to build customer segments}
+        \resumeItem{Automated new-member classification, model deployment, and retraining with \textbf{Databricks} on \textbf{Azure}}
+        \resumeItem{Presented findings to the \textbf{Board of Directors}, shaping a marketing campaign targeting \textbf{\$40M+} in new deposits}
       \resumeItemListEnd
 
     \resumeSubheading
-      {High Performance Computing Assistant}{October 2024 -- Present}
-      {University of Utah's Center for High Performance Computing (CHPC)}{Salt Lake City, UT}
+      {High Performance Computing Assistant}{Oct. 2024 -- May 2026}
+      {University of Utah, CHPC}{Salt Lake City, UT}
       \resumeItemListStart
-        \resumeItem{Developed automated daily health reporting system (Python/Bash), saving engineers \textbf{7 hours/week, each}}        \resumeItem{Interfaced with DMTF's Redfish \textbf{REST API} to access higher quality server data }
+        \resumeItem{Automated daily server health reports in \textbf{Python/Bash}, saving each engineer \textbf{7 hours/week}}
+        \resumeItem{Integrated the Redfish \textbf{REST API} (industry standard for server hardware management) for richer telemetry}
         \resumeItem{\textbf{Doubled usable monitoring data} by implementing fault-tolerant logging}
-        \resumeItem{Implemented new \textbf{PostgreSQL} database to replace computer service history with a simple command line tool}
-        \resumeItem{Continued responsibilities from previous role}
-
+        \resumeItem{Replaced paper/ad-hoc server service records with a \textbf{PostgreSQL} database and command-line tool}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Student Node Wrangler}{June 2024 -- October 2024}
-      {University of Utah's CHPC}{Salt Lake City, UT}
+      {Student Node Wrangler (Systems Technician)}{June 2024 -- Oct. 2024}
+      {University of Utah, CHPC}{Salt Lake City, UT}
         \resumeItemListStart
-        \resumeItem{Collaborated in a Systems Team on daily ops to keep \textbf{10 research clusters} operational in \textbf{a data center}}
-        \resumeItem{Repaired and upgraded \textbf{300 Dell and Lenovo servers}, restoring compute resources for researchers}    
-        \resumeItem{Ensured security compliance with secure access controls in shared Linux filespace and Git}
-              \resumeItemListEnd
-      
+        \resumeItem{Kept \textbf{10 research computing clusters} operational as part of the data center systems team}
+        \resumeItem{Repaired and upgraded \textbf{300+ Dell and Lenovo servers}, restoring compute capacity for researchers}
+      \resumeItemListEnd
+
   \resumeSubHeadingListEnd
 
 
@@ -180,42 +166,34 @@
     \resumeSubHeadingListStart
 
     \resumeProjectHeading
-              {\textbf{Omni-Language Voice-Controlled Device} $|$ \emph{Python, React, NodeJS, Vosk, Raspberry Pi}}{}
+        {\textbf{Carvis -- AI Car Diagnostics App (Capstone Award Winner)} $|$ \emph{Flutter, React, FastAPI, LLM/RAG, Bluetooth}}{}
             \resumeItemListStart
-                \resumeItem{Built a Raspberry Pi \textbf{Express server} capable of receiving and acting on local and remote audio signals}
-                \resumeItem{Integrated \textbf{AI real-time speech transcription and translation} with local VOSK AI model}
-                \resumeItem{Hosted a dashboard using a \textbf{Full-stack React} design to display words, and control circuit in real time}
-                \resumeItem{Prototyped voice-activated circuit switch by controlling GPIO circuits with the server}
-          \resumeItemListEnd
+                \resumeItem{Built a \textbf{Flutter} mobile app and \textbf{React} web dashboard that pair with a Bluetooth OBD-II car diagnostic scanner}
+                \resumeItem{Read live engine metrics and fault codes via the ELM327 protocol; cross-referenced public vehicle recall APIs}
+                \resumeItem{Developed an \textbf{LLM ``AI mechanic''} using RAG that recommends repairs and finds replacement parts}
+                \resumeItem{Served data through a \textbf{FastAPI} backend with automatic scanner reconnection and \textbf{Apple CarPlay} display}
+            \resumeItemListEnd
 
     \resumeProjectHeading
-        {\textbf{Chess Tutor} $|$ \emph{C++, QT Creator, Lichess Database}}{}
+        {\textbf{Multilingual Voice-Controlled Device} $|$ \emph{Python, React, Node.js, Express, Vosk, Raspberry Pi}}{}
             \resumeItemListStart
-                \resumeItem{Developed a responsive Chess Multiplayer/Puzzle Tutor with MVC architecture} 
-                \resumeItem{Utilized \textbf{Lichess's database} to generate authentic and unique puzzles }
-                \resumeItem{Implemented \textbf{board state} and move sequences using \textbf{HashMaps and Stacks} for efficient logic }
-                \resumeItem{Built a custom PGN parser to adapt Lichess API game data into move sequences}
-
+                \resumeItem{Built a Raspberry Pi \textbf{Express} server with on-device \textbf{speech recognition and translation} (Vosk)}
+                \resumeItem{Voice commands switch hardware circuits via GPIO; a \textbf{React} dashboard shows live transcripts and controls}
             \resumeItemListEnd
 
     \resumeSubHeadingListEnd
-    
 
 
-
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Skills}
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Spoken Languages}{: German, English, Spanish } \\
-     \textbf{Programming Languages}{: Js/Ts, C\#, Python, C++, Java, Bash, SQL } \\
-     \textbf{Libraries}{: React, Kotlin, Redux, Pandas, NumPy, PyTorch, scikit-learn,} \\
-     \textbf{Tools}{: Docker, Unix, WSL, Qt Creator, Windows, Agile and Scrum} \\
-    \textbf{Other}{: Node, Express, ArchBTW } \\
+     \textbf{Languages}{: Python, JavaScript/TypeScript, C\#, C++, Java, Kotlin, SQL, Bash} \\
+     \textbf{Frameworks}{: React, Redux, Node.js, Express, FastAPI, Flutter} \\
+     \textbf{AI/ML \& Data}{: PyTorch, scikit-learn, Pandas, NumPy, RAG, LLMs, Databricks, Azure, PostgreSQL} \\
+     \textbf{Tools}{: Docker, Docker Compose, Git, Linux (Arch), REST APIs, Agile/Scrum} \\
+     \textbf{Spoken Languages}{: English, German, Spanish}
     }}
  \end{itemize}
 
-
-%-------------------------------------------
 \end{document}
